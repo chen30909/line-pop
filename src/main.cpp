@@ -1,8 +1,10 @@
 #include "App.hpp"
-
 #include "Core/Context.hpp"
 
+
 int main(int, char**) {
+    SDL_SetMainReady();
+
     auto context = Core::Context::GetInstance();
     App app;
 
